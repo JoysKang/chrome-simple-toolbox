@@ -1,0 +1,99 @@
+body {
+    display: grid;
+    justify-content: center;
+    margin: 0;
+}
+
+img {
+    width: 18px;
+    height: 18px;
+}
+
+.explain{
+    font-size: 26px;
+    margin-top: 30px;
+}
+
+.options {
+    display: grid;
+    grid-template-columns: 360px 360px;
+    justify-items: center;
+    align-items: center;
+    font-size: 14px;
+    margin: 30px 10px 10px 10px;
+    box-sizing: border-box;
+}
+
+.option {
+    display: grid;
+    grid-template-columns: 20px 200px 20px;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.list {
+    border-style: dotted;
+    border-width: 1px;
+    background: rgb(242, 242, 242);
+    border-radius: 8px;
+}
+
+.switch-option {
+    display: grid;
+    justify-content: right;
+}
+
+.switch {
+    width: 46px;
+    height: 20px;
+    position: relative;
+    background-color: rgb(148, 148, 148);
+    border-radius: 10px;
+    -webkit-appearance: none;
+    outline: none;
+}
+
+.switch:before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+.switch:checked {
+    box-shadow: #64bd63 0 0 0 16px inset;
+}
+
+.switch:checked:before {
+    left: 32px;
+    border-radius: 4px;
+    width: 6px;
+    height: 16px;
+    top: 2px;
+}
+
+.switch.switch-anim:before {
+    transition: left 0.5s, width 0.2s, height 0.2s, background-color 0.5s;
+}
+
+.switch.switch-anim:checked:before {
+    transition: left 0.5s, width 0.5s, height 0.5s, background-color 0.5s;
+}
+
+#initialize {
+    display: grid;
+    grid-template-columns: 100px 80px;
+    align-items: center;
+    font-size: 26px;
+    margin-top: 30px;
+}
+
+#initialize button {
+    width: 60px;
+    margin-left: 10px;
+}

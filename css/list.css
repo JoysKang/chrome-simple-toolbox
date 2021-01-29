@@ -1,0 +1,47 @@
+span {
+    border-color: burlywood;
+    border-radius: 6px;
+}
+
+.option {
+    display: none;
+    grid-template-columns: 20px 200px;
+    justify-items: start;
+    align-items: center;
+    padding: 4px 10px 4px 10px;
+}
+
+.option:hover {
+    background: rgb(238, 238, 236);
+    grid-auto-flow:column
+}
+
+.select {
+    display: grid;
+    grid-template-columns: 130px 70px;
+    justify-content: space-between;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 240px;
+    justify-items: left;
+    align-items: start;
+    font-size: 14px;
+    margin: 0;
+    box-sizing: border-box;
+    cursor:pointer;
+}
+
+img {
+    width: 16px;
+    height: 16px;
+}
+
+#open-label {
+    display: none;
+}
+
+#menu {
+    display: none;
+}
